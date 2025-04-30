@@ -1,10 +1,10 @@
 {
   "executor": "slurm",
   "default_resources": {
-    "partition": "htc-el8",
+    "partition": "batch",
     "mem_mb": 1000,
     "runtime": 10,
-    "slurm_account": "mattei",
+    "slurm_account": "lp_hack_bio_im",
     "name": "{rule}-{wildcards}"
   },
   "restart_times": 1,
