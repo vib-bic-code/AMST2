@@ -13,10 +13,10 @@ def get_cluster_settings(sn_args, config_filepath):
 
     from snakemake.resources import DefaultResources
     default_resources = DefaultResources()
-    default_resources.set_resource('partition', 'htc-el8')
+    default_resources.set_resource('partition', 'batch')
     default_resources.set_resource('mem_mb', 1000)
     default_resources.set_resource('runtime', 10)
-    default_resources.set_resource('slurm_account', group_name)
+    default_resources.set_resource('slurm_account', 'lp_hack_bio_im')
     default_resources.set_resource('name', '{rule}-{wildcards}')
     sn_args.default_resources = default_resources
 
